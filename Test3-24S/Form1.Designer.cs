@@ -28,109 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            tx1 = new TextBox();
             button1 = new Button();
             button2 = new Button();
-            textBox2 = new TextBox();
+            tx2 = new TextBox();
             label1 = new Label();
-            textBox3 = new TextBox();
+            tx3 = new TextBox();
             label2 = new Label();
-            textBox4 = new TextBox();
+            tx4 = new TextBox();
             label3 = new Label();
             SuspendLayout();
             // 
-            // textBox1
+            // tx1
             // 
-            textBox1.Location = new Point(56, 41);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            tx1.Location = new Point(64, 55);
+            tx1.Margin = new Padding(3, 4, 3, 4);
+            tx1.Name = "tx1";
+            tx1.Size = new Size(114, 27);
+            tx1.TabIndex = 0;
             // 
             // button1
             // 
-            button1.Location = new Point(56, 89);
+            button1.Location = new Point(64, 119);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(100, 23);
+            button1.Size = new Size(114, 31);
             button1.TabIndex = 1;
             button1.Text = "Add";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
             // 
             // button2
             // 
-            button2.Location = new Point(56, 137);
+            button2.Location = new Point(64, 183);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(100, 23);
+            button2.Size = new Size(114, 31);
             button2.TabIndex = 1;
             button2.Text = "Reset";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
-            // textBox2
+            // tx2
             // 
-            textBox2.Enabled = false;
-            textBox2.Location = new Point(250, 41);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 0;
-            textBox2.Text = "0";
+            tx2.Enabled = false;
+            tx2.Location = new Point(286, 55);
+            tx2.Margin = new Padding(3, 4, 3, 4);
+            tx2.Name = "tx2";
+            tx2.Size = new Size(114, 27);
+            tx2.TabIndex = 0;
+            tx2.Text = "0";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(197, 46);
+            label1.Location = new Point(225, 61);
             label1.Name = "label1";
-            label1.Size = new Size(31, 15);
+            label1.Size = new Size(38, 20);
             label1.TabIndex = 2;
             label1.Text = "Sum";
             // 
-            // textBox3
+            // tx3
             // 
-            textBox3.Enabled = false;
-            textBox3.Location = new Point(250, 89);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 0;
-            textBox3.Text = "0";
+            tx3.Enabled = false;
+            tx3.Location = new Point(286, 119);
+            tx3.Margin = new Padding(3, 4, 3, 4);
+            tx3.Name = "tx3";
+            tx3.Size = new Size(114, 27);
+            tx3.TabIndex = 0;
+            tx3.Text = "0";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(197, 94);
+            label2.Location = new Point(225, 125);
             label2.Name = "label2";
-            label2.Size = new Size(40, 15);
+            label2.Size = new Size(48, 20);
             label2.TabIndex = 2;
             label2.Text = "Count";
             // 
-            // textBox4
+            // tx4
             // 
-            textBox4.Enabled = false;
-            textBox4.Location = new Point(250, 137);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 0;
+            tx4.Enabled = false;
+            tx4.Location = new Point(286, 183);
+            tx4.Margin = new Padding(3, 4, 3, 4);
+            tx4.Name = "tx4";
+            tx4.Size = new Size(114, 27);
+            tx4.TabIndex = 0;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(197, 142);
+            label3.Location = new Point(225, 189);
             label3.Name = "label3";
-            label3.Size = new Size(50, 15);
+            label3.Size = new Size(64, 20);
             label3.TabIndex = 2;
             label3.Text = "Average";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(415, 221);
+            ClientSize = new Size(474, 295);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(tx4);
+            Controls.Add(tx3);
+            Controls.Add(tx2);
+            Controls.Add(tx1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -139,14 +148,14 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox tx1;
         private Button button1;
         private Button button2;
-        private TextBox textBox2;
+        private TextBox tx2;
         private Label label1;
-        private TextBox textBox3;
+        private TextBox tx3;
         private Label label2;
-        private TextBox textBox4;
+        private TextBox tx4;
         private Label label3;
     }
 }
